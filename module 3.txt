@@ -1,0 +1,146 @@
+ "Assignment" "MODULE 3"
+
+
+ 
+1. What is RDBMS?
+-> RDBMS stands for relational database managemebt system,
+   RDBMS is a collection of programs and capabilitIES that anble IT teams and others to create,update,modify, with thE help of relational database.
+
+
+2. what is SQL.
+-> SQl is a sequencal language and for storing, maniupalting,and retriving data from the database.
+
+
+3.what are SQL commands
+-> 1.DDL data defination language
+    -> create, drop, alter,truncate
+   
+   2.DML data manipulation language
+    -> Insert, update and delete
+
+  3.DQL data query language
+    -> select,
+
+  4.DCL data control language
+   -> grant,revoke
+
+  5.TCL transation control language
+   -> commit,roll back, save point
+
+
+4.What is Join?
+-> Joinning is the process og taking data from multiple tables and putting it into one generated view.so an sql join clause in a select tables statement 
+   combines columns from one or more tables in a relational database and returns a set of data
+
+
+5.Write types of joins?
+-> 1.cross joins- Returns all possible combinations of rows from two tables.
+  2.Inner joins- Uses a comparison operator to match rows from two tables that are based on the values in common columns from each table
+  3.Left join- Returns all the rows from the left table that are specified in the left outer join clause,not just the rows in which the columns match
+  4.Right join-Returns all the rows from the right table that are specified in the right outer join caluse,not just the rows in which the columns match.
+  5.Full outer join- returns all the rows in both the left and right tables
+
+
+6.How many constraints and describes it self.
+-> A constraint is a rule that is used for optimization purposes.
+ * A NOT NULL constraint is a rule that prevents null values from being entered into one or more columns within a table.
+ *A unique constraint (also referred to as a unique key constraint) is a rule that forbids duplicate values in one or more columns within a table. Unique and primary
+  keys are the supported unique constraints. For example, a unique constraint can be defined on the supplier identifier in the supplier table to ensure that the same 
+  supplier identifier is not given to two suppliers.
+ *A primary key constraint is a column or combination of columns that has the same properties as a unique constraint. You can use a primary key and foreign key
+  constraints to define relationships between tables.
+ *A foreign key constraint (also referred to as a referential constraint or a referential integrity constraint) is a logical rule about values in one or more columns 
+  in one or more tables. For example, a set of tables shares information about a corporation's suppliers. Occasionally, a supplier's name changes. You can define a 
+  referential constraint that states the ID of the supplier in a table must match a supplier ID in the supplier information. This constraint prevents insert, update, 
+  or delete operations that would otherwise result in missing supplier information.
+
+
+7.Difference between RDBMS and DBMS..
+-> "DBMS"
+ 1.DBMS stores data as file.	
+ 2.Data elements need to access individually.
+ 3.No relationship between data.	
+ 4.Normalization is not present.	
+ 5.DBMS does not support distributed database.	
+ 6.It stores data in either a navigational or hierarchical form.
+ 7.It deals with small quantity of data.	
+ 8.Data redundancy is common in this model.	
+ 9.It is used for small organization and deal with small data.	
+ 10.It supports single user.			
+ 11.Data fetching is slower for the large amount of data.	
+
+  "RDBMS"
+ 1.RDBMS stores data in tabular form.
+ 2.Multiple data elements can be accessed at the same time.
+ 3.Data is stored in the form of tables which are related to each other.
+ 4.Normalization is present.
+ 5.RDBMS supports distributed database.
+ 6.It uses a tabular structure where the headers are the column names, and the rows 
+   contain corresponding values.
+ 7.It deals with large amount of data.
+ 8.Keys and indexes do not allow Data redundancy.
+ 9.It is used to handle large amount of data.
+ 10.It supports multiple users.
+ 11.Data fetching is fast because of relational approach.
+
+
+8.What is API testing?
+-> API TESTING is a software testing type that validates Application Programming Interfaces (APIs). The purpose of API Testing is to check the functionality, reliability,
+   performance, and security of the programming interfaces. In API Testing, instead of using standard user inputs(keyboard) and outputs, you use software to send calls to 
+   the API, get output, and note down the system’s response. API tests are very different from GUI Tests and won’t concentrate on the look and feel of an application. It
+   mainly concentrates on the business logic layer of the software architecture.
+
+9.Types of API testing?
+-> OpenAPIs:ThesetypesofAPIsarepubliclyavailabletouselikeOAuthAPIsfrom Google. It has also not given any restriction to use them. So, they 
+    arealsoknownasPublicAPIs
+   PartnerAPIs:SpecificrightsorlicensestoaccessthistypeofAPIbecausetheyarenotava
+   ilabletothepublic
+   Internal APIs: Internal or private. These APIs are developed by companiesto use 
+   in their internal systems. It helps you to enhance the productivity ofyourteams.
+
+ 10.What is responsive testing?
+ -> A responsive web design involves creating a flexible web page that is accessible 
+    from any device, starting from a mobile phone to a tablet.
+    Furthermore, a responsive web design improves users’ browsing experience.
+    Software testers may find it challenging to perform responsive design testing as 
+    a variety of factors are to be looked into during the testing phase. 
+
+11.Which types of tools are available for responsive testing?
+ -> LT Browser
+    Lembda Testing
+    Google Resizer
+    I am responsive
+    Pixel tuner
+
+12.What is the full of Ipa,.apk
+-> APK file stands for (Android Application Package). APK is a file extension of an Android device. APK files can normally be used in Android and a number of other 
+   Android-based Operating Systems for the distribution and installation of mobile apps and mobile games.
+-> An IPA (iOS App Store Package) file is an iOS application archive file that stores an iOS app. Each IPA file includes a binary and can only be installed on an iOS device.
+
+
+13.How to create step for to open the developer option mode on?
+-> 1.Android 9 (API level 28) and higher: Settings > System > Advanced > Developer Options > USB debugging
+   2.Android 8.0.0 (API level 26) and Android 8.1.0 (API level 26): Settings > System > Developer Options > USB debugging
+  3.Android 7.1 (API level 25) and lower: Settings > Developer Options > USB debugging
+
+-> At the top of the Developer options screen, you can toggle the options on and off (figure 1). You probably want to keep this on. When off, most options are disabled except 
+   those that don't require communication between the device and your development computer.
+
+-> Before you can use the debugger and other tools, you need to enable USB debugging, which allows Android Studio and other SDK tools to recognize your device when connected via USB. 
+   To enable USB debugging, toggle the USB debugging option in the Developer Options menu. You can find this option in one of the following locations, depending on your Android version:
+  * Android 9 (API level 28) and higher: Settings > System > Advanced > Developer Options > USB debugging
+  * Android 8.0.0 (API level 26) and Android 8.1.0 (API level 26): Settings > System > Developer Options > USB debugging
+  * Android 7.1 (API level 25) and lower: Settings > Developer Options > USB debugging
+
+
+
+
+
+
+
+
+
+
+
+
+ 
